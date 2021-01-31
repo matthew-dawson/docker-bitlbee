@@ -1,9 +1,9 @@
 FROM buildpack-deps:stable-scm
-LABEL maintainer="Michele Bologna <github@michelebologna.net>"
-LABEL name="BitlBee Docker container by Michele Bologna"
-LABEL version="mb-3.6-20201026"
+LABEL maintainer="Matthew Dawson <github@matthewdawson.dev>"
+LABEL name="BitlBee Docker container original work by Michele Bologna"
+LABEL version="3.6-1-20210130"
 
-ENV BITLBEE_VERSION=3.6
+ENV BITLBEE_VERSION=3.6-1
 
 COPY build.sh /root
 RUN /root/build.sh
