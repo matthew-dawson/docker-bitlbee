@@ -1,12 +1,14 @@
 #!/bin/bash
+set -eux
 
-apt update
-apt install -y --no-install-recommends autoconf automake build-essential gettext gcc libtool make \
-libglib2.0-dev libhttp-parser-dev libotr5-dev libpurple-dev libgnutls28-dev \
-libjson-glib-dev libpng-dev libolm-dev libprotobuf-c-dev protobuf-c-compiler \
-libgcrypt20-dev libmarkdown2-dev libpurple-dev libsqlite3-dev libwebp-dev libtool-bin
+apt-get update
+apt-get install -y --no-install-recommends autoconf automake build-essential gettext \
+	gcc libtool make \
+	libglib2.0-dev libhttp-parser-dev libotr5-dev libpurple-dev libgnutls28-dev \
+	libjson-glib-dev libpng-dev libolm-dev libprotobuf-c-dev protobuf-c-compiler \
+	libgcrypt20-dev libmarkdown2-dev libpurple-dev libsqlite3-dev libwebp-dev libtool-bin
 
-cd
+cd /tmp
 curl -LO# https://get.bitlbee.org/src/bitlbee-$BITLBEE_VERSION.tar.gz
 curl -LO# https://github.com/EionRobb/skype4pidgin/archive/1.7.tar.gz
 curl -LO# https://github.com/majn/telegram-purple/releases/download/v1.4.4/telegram-purple_1.4.4.orig.tar.gz
