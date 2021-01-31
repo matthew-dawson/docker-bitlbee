@@ -30,7 +30,7 @@ make install-dev
 
 ## skypeweb
 cd /tmp
-git clone https://github.com/EionRob/skype4pidgin.git
+git clone https://github.com/EionRobb/skype4pidgin.git
 cd /tmp/skype4pidgin/skypeweb
 make
 make install
