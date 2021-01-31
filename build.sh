@@ -42,6 +42,9 @@ cd /tmp/bitlbee-facebook
 ./autogen.sh
 make
 make install
+# libtool --finish
+./libtool --finish /usr/local/lib/bitlbee
+
 
 ## purple-hangouts
 cd /tmp
@@ -49,9 +52,6 @@ git clone https://github.com/EionRobb/purple-hangouts.git
 cd /tmp/purple-hangouts
 make
 make install
-
-## libtool --finish
-libtool --finish /usr/local/lib/bitlbee
 
 ## cleanup
 apt-get autoremove -y --purge \
